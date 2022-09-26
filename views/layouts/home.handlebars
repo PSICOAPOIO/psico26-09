@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+  
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+<!-- !!!!{{{body}}}!!!!!! -->
+ 
+    
+    
+
+    <div class="cont">
+        <!--Mensagens
+        {{#if messages.message}}
+        <div class="message">
+             {{messages.message}}
+        </div>
+        {{/if}}-->
+    
+
+    </div>
+    
+    <div class="cabecalho">
+        <div>
+            <h1>Home</h1>
+        </div>
+        <div id="logo">
+            <img src="imagens/logo.png"/>
+        </div>
+    </div>
+        <div class="corpo">
+
+            <div class="icones">
+            <div id="forumEmeditacao">
+                {{#if session.userid}} 
+                    <a href="/post/forum">Fórum</a>
+                {{else}}
+                    <a href="/login">Fórum</a>
+                {{/if}}
+                <img src="imagens/forum.png"/>
+                <a href="/blog/meditacao"> Meditação</a>
+                <img src="imagens/meditacao.png"/>
+            </div>
+
+            
+                <div id="estresseEdepressao">
+                    <!--<h1>ChatBot</h1>
+                    <img src="img/chatbotHome.png"/>-->
+                    <p>Estresse</p>
+
+                    <img src="imagens/estresse.png"/>
+                    <p>Depressão</p>
+                    <img src="imagens/depressao.png"/>
+                </div>
+
+                <div id="autoavaliacaoEansiedade">
+                    <a href="/login">Autoavaliação</a>
+                    <img src="imagens/autoavaliacao.png"/>
+                    <p>Ansiedade</p>
+                    <img src="imagens/ansiedade.png"/>
+                </div>
+            </div>
+        </div>
+
+    <div class="container">
+       {{{body}}}
+    </div>
+
+</body>
+</html>

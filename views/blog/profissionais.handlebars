@@ -1,0 +1,56 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/profissionais.css">
+    <title>Profissionais</title>
+</head>
+<body>
+     
+    <h1>Profissionais</h1>
+    <div class="linha">
+        <div >
+            <img src="/imagens/roger.jpg"/>
+            <h2>Roger Ferreira dos Santos</h2>
+            <p >Psicólogo</p>
+            <h3>CONTATO</h3>
+            <h4>(51)98614-8355</h4>
+        </div>
+        <div>
+            <img  src="/imagens/ana.jpg"/>
+            <h2 >Ana Caroline Kohlrausch</h2>
+            <p >Psicóloga</p>
+            <h3 >CONTATO</h3>
+            <h4>(51)99910-2127</h4>
+        </div>
+        <div>
+            <img  src="/imagens/diego.jpeg"/>
+            <h2 >Diego da Silva Souza</h2>
+            <p >Psicólogo</p>
+            <h3 >CONTATO</h3>
+            <h4>(51)98432-6142</h4>
+        </div>
+    </div>
+
+    
+    </div>
+    <script>
+        document.querySelector("nav").style.display="none";
+        icon=document.querySelector("#menu");
+        icon.onclick= function(){
+            nav=document.querySelector("nav");
+            if(nav.style.display=="none")
+                nav.style.display="block";
+
+            else 
+                nav.style.display="none";
+                
+            }
+
+        x = document.querySelector("#x");
+        x.onclick=function(){
+            nav=document.querySelector("nav");
+            nav.style.display="none";
+        }
+    </script>
+</body>
